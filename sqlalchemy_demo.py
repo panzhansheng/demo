@@ -2,7 +2,7 @@ import sqlalchemy as db
 
 #engine = db.create_engine('sqlite:///census.sqlite')
 # "mysql+pymysql://user:pass@host_name/dbname?charset=utf8"
-engine = db.create_engine('mysql+pymysql://pzs:pzspzsPzs0!@192.168.4.36/coursedb?charset=utf8')
+engine = db.create_engine('mysql+pymysql://pzs:pzs@localhost/coursedb?charset=utf8')
 connection = engine.connect()
 metadata = db.MetaData()
 account = db.Table('course_account', metadata, autoload=True, autoload_with=engine)
