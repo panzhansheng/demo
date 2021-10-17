@@ -25,7 +25,7 @@ app = Flask(__name__)
 # password in users table is encrypted 
 app.config['SECRET_KEY']='Gdou@2021'
 #app.config['SQLALCHEMY_DATABASE_URI']='sqlite://///home/pzs/pzs/webcam/users.db' 
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://pzs:pzspzsPzs0!@192.168.4.36/blog?charset=utf8'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://pzs:pzspzsPzs0!@localhost/blog?charset=utf8'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True 
 
 db = SQLAlchemy(app)   
